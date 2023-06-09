@@ -1,0 +1,45 @@
+{
+  "name": "@zefact/holidays-jp",
+  "version": "1.0.0",
+  "description": "日本の祝日及び休業日を設定・操作するJavascriptです。",
+  "main": "dist/holidays-jp.min.iife.js",
+  "module": "src/holidays-jp.ts",
+  "types": "dist/holidays-jp.d.ts",
+  "type": "module",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zefact/holidays-jp.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "javascript",
+    "日本",
+    "祝日"
+  ],
+  "author": "zefact-ohnuki <y.ohnuki@zefact.co.jp>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zefact/holidays-jp/issues"
+  },
+  "homepage": "https://github.com/zefact/holidays-jp#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9"
+  }
+}
