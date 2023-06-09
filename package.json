@@ -1,6 +1,6 @@
 {
   "name": "@zefact/holidays-jp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "日本の祝日及び休業日を設定・操作するJavascriptです。",
   "main": "dist/holidays-jp.min.iife.js",
   "module": "src/holidays-jp.ts",
