@@ -7,15 +7,6 @@
 
 ## インストール
 
-GitHub Packages にて公開しているため、ディレクトリ直下に`.npmrc`ファイルを作成し以下を記載。
-
-```
-@zefact:registry="https://npm.pkg.github.com"
-//npm.pkg.github.com/:_authToken={ GitHubのPAT（自身のプライベートアクセストークン） }
-```
-
-PAT の取得方法は[こちら](https://docs.github.com/ja/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)を参照。
-
 ```shell
 $ npm install @zefact/holidays-jp
 ```
@@ -100,5 +91,5 @@ osamutake 様及び Contributors の皆様に感謝いたします。
 
 ## ChangeLog
 
-- 2023-06-06：v1.0.0
+- 2023-06-06：v1.0.2
   - 初版
