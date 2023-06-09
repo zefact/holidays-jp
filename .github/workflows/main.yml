@@ -1,0 +1,41 @@
+name: publish holidays-jp
+
+env:
+  CI: true
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - '!*'
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    name: Setup
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          registry-url: https://registry.npmjs.org
+
+      # 必要なモジュール（typescript）をインストール
+      - name: install node_modules
+        run: npm install
+
+      # ビルド
+      - name: Build npm package
+        run: npm run build
+
+      # パッケージとして公開する
+      - name: npm publish
+        run: npm publish -access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
